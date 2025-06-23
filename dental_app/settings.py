@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',  # If you're using Django REST Framework
     "rest_framework.authtoken",
+    "django-cors-headers",
     "ussd", # USSD engine
     "dental_ussd",
 ]
@@ -153,3 +154,8 @@ CACHES = {
     }
 }
 DEFAULT_USSD_SCREEN_JOURNEY = os.path.join(BASE_DIR, 'journeys', 'dental_appointment_menu.yml')
+
+CORS_ALLOWED_ORIGINS = ['http://localhost:8081'] # Change port if your simulator is running on a different port
+CORS_ALLOW_METHODS = ['GET', 'POST']
+CORS_ALLOW_HEADERS = ['Authorization', 'Content-Type']
+CORS_ALLOW_CREDENTIALS = True
