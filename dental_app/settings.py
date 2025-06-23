@@ -152,4 +152,4 @@ CACHES = {
         }
     }
 }
-DEFAULT_USSD_SCREEN_JOURNEY = os.path.join(BASE_DIR, 'journeys', 'sample_menu.yml')
+DEFAULT_USSD_SCREEN_JOURNEY = os.path.join(BASE_DIR, 'journeys', 'dental_appointment_menu.yml')
