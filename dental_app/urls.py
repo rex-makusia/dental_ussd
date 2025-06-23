@@ -19,4 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('dental_ussd/', include('dental_ussd.urls')),  # Include the dental_ussd app URLs
 ]
