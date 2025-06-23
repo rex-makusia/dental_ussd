@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',  # If you're using Django REST Framework
     "rest_framework.authtoken",
     "ussd", # USSD engine
+    "dental_ussd",
 ]
 
 MIDDLEWARE = [
