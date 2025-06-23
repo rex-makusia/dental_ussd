@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',  # If you're using Django REST Framework
     "rest_framework.authtoken",
-    "django-cors-headers",
+    "corsheaders",
     "ussd", # USSD engine
     "dental_ussd",
 ]
